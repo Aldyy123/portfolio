@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="home">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <img src="./assets/photo.png" style="width: 100%" alt="" />
+        </div>
+        <div class="col justify-content-center col-sm-12 col-md-6 col-lg-6">
+          <h3>Hello,</h3>
+          <div>
+            <p class="amiri">
+              Nama ku Mohammad Ardi Trisnaldi saya seorang
+              <strong>Programmer</strong> dan <strong>Teknisi Komputer</strong>.
+              Hal yang ku suka bereksplorasi didunia digital dan
+              technopreneurship. Saya dan kakak saya mendirikan sebuah usaha IT
+              dan Percetakan yang bernama <strong>Arsy Digicom</strong> yang
+              bertempat di Kota Tegal.
+            </p>
+            <div class="d-flex justify-content-around landing-link">
+              <a
+                class="cv"
+                href="https://drive.google.com/file/d/1tRTIG5Y3GqwFAfGj87At8QpbMUV7vJ0M/view?usp=sharing"
+                target="_blank"
+                >CV</a
+              >
+              <a
+                class="certificate"
+                href="https://drive.google.com/drive/folders/1UicDEz3NzNCQyK6p6xuz9IGXVebS2aK-?usp=sharing"
+                target="_blank"
+                >Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container mt-5" id="projects">
+      <div class="row">
+        <div
+          class="offset-md-2 col-md-9 text-justify justify-content-center d-flex flex-column align-items-center"
+        >
+          <h4 class="orbitron">Projects</h4>
+          <p>
+            Project yang sudah saya kembangkan dari setiap portfolio maupun
+            project dari customer
+          </p>
+        </div>
+        <div class="col-12 d-flex flex-wrap filter"></div>
+      </div>
+      <div class="row mt-5" id="project">
+       
+      </div>
+    </section>
+    <section class="container mt-5" id="contact">
+      <div class="row">
+        <div class="col-md-9 offset-md-2">
+          <div>
+            <h4 class="text-center orbitron">Contact Me</h4>
+            <p class="text-justify">
+              Jika Anda ingin mengobrol tentang sebuah proyek atau hanya
+              memiliki pertanyaan, silakan bisa contact saya.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a
+              class="text-center talk-me"
+              href="mailto:mohammad@gmail.com"
+              target="_blank"
+              >Talk me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between">
+          <div class="copyright">
+            <p>&copy; Copyright M. Ardi T.</p>
+          </div>
+          <div class="social-media">
+            <a
+              href="https://www.linkedin.com/in/mohammad-ardi-trisnaldi"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/Aldyy231" target="_blank">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+            <a href="https://www.github.com/Aldyy123" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>

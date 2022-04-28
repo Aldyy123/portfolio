@@ -1,0 +1,168 @@
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Orbitron&display=swap');
+.amiri{
+  font-family: 'Amiri', serif;
+}
+.orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
+.stack{
+  display: flex;
+  flex-wrap: wrap;
+}
+.link-category,
+.stack-lang {
+  opacity: 1;
+  position: relative;
+  padding: 5px 10px;
+  background-color: rgb(252, 246, 246);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin: 0 5px;
+  display: inline-block;
+  transition: all 0.5s linear;
+}
+.card img {
+  width: 100%;
+}
+.active,
+.link-category:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.link-category.active::before,
+.link-category.hover::before {
+  animation: myAnim 0.5s ease-out 0s 1 normal none;
+  position: absolute;
+  transition: animation 1s ease-out;
+  content: "";
+  top: -5px;
+  left: auto;
+  width: 50%;
+  background-color: rgb(118, 50, 228);
+  height: 3px;
+}
+.card .nav-card {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  opacity: 0;
+  z-index: -3;
+  transition: all 0.5s linear;
+  height: 100%;
+  background-color: rgba(84, 149, 223, 0.5);
+  padding: 5px 10px;
+}
+.card a.preview,
+.card a.github {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 10pt;
+  transition: all 0.5s ease-out;
+  animation: navCard 0.5s ease-out 0s 1 normal none;
+  vertical-align: middle;
+}
+.card a.preview img,
+.card a.github img {
+  width: 1.5rem;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.cv, .certificate:hover{
+  background-color: rgb(112, 57, 241);
+  border: none;
+  color: white;
+}
+.cv, .certificate{
+  border-radius: 10px;
+  padding: 5px 30px;
+  transition: all 0.5s ease-in-out;
+}
+.certificate, .cv:hover{
+  background-color: transparent;
+  color: #0a58ca;
+  border: 1px solid black;
+}
+.talk-me{
+  padding: 5px 20px;
+  border: 1px solid black;
+  transition: all 0.5s linear;
+}
+.talk-me:hover{
+  border: none;
+  color: white;
+  background-color: rgb(112, 57, 241);
+}
+.copyright p{
+  font-size: 12px;
+}
+.social-media a{
+  margin: 0 5px;
+  color: black;
+}
+.social-media a i{
+  font-size: 16pt;
+}
+
+@keyframes navCard {
+  0% {
+    opacity: 0;
+    transform: scale(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+.text-justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px){
+  .landing-link{
+    justify-content: flex-start!important;
+  }
+  .cv, .certificate{
+    margin: 0 10px;
+  }
+  .filter a{
+    font-size: 9pt;
+  }
+  .link-category, .stack-lang{
+    font-size: 8pt;
+  }
+  .projects{
+    margin: 2rem auto !important;
+  }
+}
+@media only screen and (min-width: 328px) and (max-width: 570px) {
+  .card a.preview,
+  .card a.github {
+    padding: 10px;
+  }
+  .card a.preview img,
+  .card a.github img {
+    width: 1.8rem;
+    color: white;
+  }
+  .stack-lang{
+    font-size: 10pt;
+  }
+}
